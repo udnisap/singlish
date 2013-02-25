@@ -1,3 +1,12 @@
+/**
+ * Singlish Translator for Google Chrome 
+ * 
+ * @author : Pasindu Perera
+ * @email : perera.pasindu@gmail.com
+ * @website : https://github.com/rumal/singlish
+ *
+ */
+
 chrome.extension.onMessage.addListener(
         function(request, sender, sendResponse) {
             if (request.type = "bg2c")
