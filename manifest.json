@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Singlish Translator",
+    "description": "Simple extension to translate Singlish to Sinhala unicode",
+    "version": "1.0",
+    "permissions": [
+        "contextMenus"
+    ],
+    "browser_action": {
+        "default_icon": "icon-off.jpg",
+        "default_title": "Click to enable Singlish Translator"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["jquery.js", "content.js"]
+        }
+    ]
+}
